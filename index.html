@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TRIVIA GAME</title>
+    <title>TRIVIA GAME version complex</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500|Merienda" rel="stylesheet">
@@ -34,120 +34,199 @@
         </div>
 
 
-        <div class="container">
-            <div class="container uk-animation-top-medium">
-                <div class="jumbotron offset-md-8"> 
-                       <div class="title">
-                            <i class="fas fa-cog fa-spin fa-3x"></i> <h1 class="title"> Coffee's Trivia Game </h1>  
-                       </div> 
-                </div>                    
+            <div class="uk-animation-top-medium">
+                <div class="title jumbotron">
+                    <i class="fas fa-cog fa-spin fa-3x"></i> <h1 class="title"> Coffee's Trivia Game </h1>  
+                </div>                                    
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="card-background">
-                            <div class="card uk-animation-scale-up">
-                                    <div class="card-header"> 
+                    <article id="MainContainer">
+                            <div class="uk-animation-scale-up">
+                                    <div class=""> 
                                         <!-- <h1> Coffes's Questions </h1> -->
                                         <h3> Time Remaining: <span id="time-remaining"></span></h3>
                                     </div> 
 
                                     <!-- QUESTIONS -->
-            
-                                    <div class="card-body">
-                                        <h3>Q1. Which country drinks most coffee?</h3>                                        
-                                        <form id="q1">
-                                                <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Canada"><i class="fas fa-globe fa-xs"></i> Canada </input>
-                                                <input class="uk-radio .uk-form-large" name="q1" type="radio" value="USA"><i class="fas fa-globe fa-xs"></i> USA </input>
-                                                <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Germany"><i class="fas fa-globe fa-xs"></i> Germany </input>
-                                                <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Colombia"><i class="fas fa-globe fa-xs"></i> Colombia </input>
-                                                <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Finland"><i class="fas fa-globe fa-xs"></i> Finland </input>                                    
-                                                <br>
-                                                <button class="uk-button uk-button-primary"> Submit </button>
-                                        </form>
 
-                                        <h3>Q2. How much does the most expensive coffee cost per Kilogram?</h3>                                        
-                                        <form id="q2">
-                                            <input class="uk-radio" name="q2" type="radio" value="100"><i class="fas fa-dollar-sign fa-xs"></i> USD. 100.00 </input>
-                                            <input class="uk-radio" name="q2" type="radio" value="600"><i class="fas fa-dollar-sign fa-xs"></i> USD. 600.00 </input>
-                                            <input class="uk-radio" name="q2" type="radio" value="500"><i class="fas fa-dollar-sign fa-xs"></i> USD. 500.00 </input>
-                                            <input class="uk-radio" name="q2" type="radio" value="350"><i class="fas fa-dollar-sign fa-xs"></i> USD. 350.00 </input>
-                                            <input class="uk-radio" name="q2" type="radio" value="225"><i class="fas fa-dollar-sign fa-xs"></i> USD. 225.00</input>                                    
-                                            <br>
-                                            <button class="uk-button uk-button-primary"> Submit </button>
-                                        </form>
+                                    <div id="transitions">
+                                        <fieldset id="questions" class="show-front">
+                                            <!-- QUESTIONS FORM -->
+                                            <form id="form">
+                                                    <!-- QUESTION 1 -->
 
-                                        <h3>Q3. Which if these is countries is a coffee productor?</h3>                                        
-                                        <form id="q3">
-                                            <input class="uk-radio" name="q3" type="radio" value="Honduras"> <i class="fas fa-globe fa-xs"></i> Honduras </input>
-                                            <input class="uk-radio" name="q3" type="radio" value="Italy"><i class="fas fa-globe fa-xs"></i> Italy </input>
-                                            <input class="uk-radio" name="q3" type="radio" value="Neatherlands"><i class="fas fa-globe fa-xs"></i> Neatherlands </input>
-                                            <input class="uk-radio" name="q3" type="radio" value="Chile"><i class="fas fa-globe fa-xs"></i> Chile </input>
-                                            <input class="uk-radio" name="q3" type="radio" value="Argentina"><i class="fas fa-globe fa-xs"></i>  Argentina </input>                                    
-                                            <br>
-                                            <button class="uk-button uk-button-primary"> Submit </button>
-                                        </form>
+                                                    <div class="front">
+                                                            <div class="innerQuestion">
+                                                                        <h3> Q1. Which country drinks most coffee?</h3>                                     
+                                                                        <p id="q1">
+                                                                           <label> <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Canada"><i class="fas fa-globe fa-xs"></i>  Canada </label>
+                                                                           <label> <input class="uk-radio .uk-form-large" name="q1" type="radio" value="USA"><i class="fas fa-globe fa-xs"></i> USA </label> 
+                                                                           <label> <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Germany"><i class="fas fa-globe fa-xs"></i> Germany </label> 
+                                                                           <label> <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Colombia"><i class="fas fa-globe fa-xs"></i> Colombia </label>
+                                                                           <label> <input class="uk-radio .uk-form-large" name="q1" type="radio" value="Finland"><i class="fas fa-globe fa-xs"></i> Finland </label>                                    
+                                                                           <br>
+                                                                       </p> 
+                                                            </div> 
+                                                    </div>
 
-                                        <h3>Q4. What is the most popular coffee brand around the world?</h3>                                        
-                                        <form id="q4">
-                                            <input class="uk-radio" name="q4" type="radio" value="McCafe"><i class="fas fa-coffee fa-xs"></i> McCafe </input>
-                                            <input class="uk-radio" name="q4" type="radio" value="Starbucks"><i class="fas fa-coffee fa-xs"></i> Starbucks</input>
-                                            <input class="uk-radio" name="q4" type="radio" value="Nescafe"><i class="fas fa-coffee fa-xs"></i> Nescafe </input>
-                                            <input class="uk-radio" name="q4" type="radio" value="Nespreso"><i class="fas fa-coffee fa-xs"></i> Nespreso </input>
-                                            <input class="uk-radio" name="q4" type="radio" value="Tim Horton"><i class="fas fa-coffee fa-xs"></i>  Tim Horton </input>                                    
-                                            <br>
-                                            <button class="uk-button uk-button-primary"> Submit </button>
-                                        </form>
+                                                    <p class="show-buttons">
+                                                            <input id="Next" type="button" class="show-back alignRight" value="Next" />
+                                                    </p>   
+                                                     
+                                                         <!-- QUESTION 2 -->
+        
+                                                    <div class="back cf panel">
+                                                            <div class="innerQuestion">
+                                                                        <h3>Q2. How much does the most expensive coffee cost per Kilogram?</h3>                                        
+                                                                        <p id="q2">
+                                                                            <label><input class="uk-radio" name="q2" type="radio" value="100"><i class="fas fa-dollar-sign fa-xs"></i> USD. 100.00 </label>
+                                                                            <label><input class="uk-radio" name="q2" type="radio" value="600"><i class="fas fa-dollar-sign fa-xs"></i> USD. 600.00 </label>
+                                                                            <label><input class="uk-radio" name="q2" type="radio" value="500"><i class="fas fa-dollar-sign fa-xs"></i> USD. 500.00 </label>
+                                                                            <label><input class="uk-radio" name="q2" type="radio" value="350"><i class="fas fa-dollar-sign fa-xs"></i> USD. 350.00 </label>
+                                                                            <label><input class="uk-radio" name="q2" type="radio" value="225"><i class="fas fa-dollar-sign fa-xs"></i> USD. 225.00</label>                                    
+                                                                            <br>
+                                                                        </p>
+                                                            </div>
+                                                    </div>
 
-                                        <h3>Q5.What is the most popular coffee brand in Canada?</h3>                                        
-                                        <form id="q5">
-                                            <input class="uk-radio" name="q5" type="radio" value="McCafe"><i class="fas fa-coffee fa-xs"></i> McCafe </input>
-                                            <input class="uk-radio" name="q5" type="radio" value="Starbucks"><i class="fas fa-coffee fa-xs"></i> Starbucks</input>
-                                            <input class="uk-radio" name="q5" type="radio" value="Nescafe"><i class="fas fa-coffee fa-xs"></i> Nescafe </input>
-                                            <input class="uk-radio" name="q5" type="radio" value="Nespreso"><i class="fas fa-coffee fa-xs"></i> Nespreso </input>
-                                            <input class="uk-radio" name="q5" type="radio" value="Tim Horton"><i class="fas fa-coffee fa-xs"></i>  Tim Horton </input>                                    
-                                            <br>
-                                            <button class="uk-button uk-button-primary"> Submit </button>
-                                        </form>
+                                                    <p class="show-buttons">
+                                                            <input id="Previous" type="button" class="show-front alignLeft" value="Previous" />
+                                                            <input id="Next" type="button" class="show-right alignRight" value="Next" />
+                                                    </p>   
+                                      
+        
+                                                            <!-- QUESTION 3 -->
+        
+                                                    <div class="right cf panel">
+                                                            <div class="innerQuestion">
+                                                                        <h3>Q3. Which if these is countries is a coffee productor?</h3>                                        
+                                                                        <p id="q3">
+                                                                            <label><input class="uk-radio" name="q3" type="radio" value="Honduras"> <i class="fas fa-globe fa-xs"></i> Honduras </label>
+                                                                            <label><input class="uk-radio" name="q3" type="radio" value="Italy"><i class="fas fa-globe fa-xs"></i> Italy </label>
+                                                                            <label><input class="uk-radio" name="q3" type="radio" value="Neatherlands"><i class="fas fa-globe fa-xs"></i> Neatherlands </label>
+                                                                            <label><input class="uk-radio" name="q3" type="radio" value="Chile"><i class="fas fa-globe fa-xs"></i> Chile </label>
+                                                                            <label><input class="uk-radio" name="q3" type="radio" value="Argentina"><i class="fas fa-globe fa-xs"></i>  Argentina </label>                                    
+                                                                            <br>
+                                                                        </p>
+                                                            </div>
+                                                    </div>
 
-                                        <h3>Q6.What is the most popular coffee beverage?</h3>                                        
-                                        <form id="q6">
-                                            <input class="uk-radio" name="q6" type="radio" value="Espresso"><i class="fas fa-coffee fa-xs"></i> Espresso </input>
-                                            <input class="uk-radio" name="q6" type="radio" value="Capuccino"><i class="fas fa-coffee fa-xs"></i> Capuccino </input>
-                                            <input class="uk-radio" name="q6" type="radio" value="Black Coffee"><i class="fas fa-coffee fa-xs"></i> Black Coffee </input>
-                                            <input class="uk-radio" name="q6" type="radio" value="Latte"><i class="fas fa-coffee fa-xs"></i> Latte  </input>
-                                            <input class="uk-radio" name="q6" type="radio" value="Mocha"><i class="fas fa-coffee fa-xs"></i>  Mocha </input>                                    
-                                            <br>
-                                            <button class="uk-button uk-button-primary"> Submit </button>
-                                        </form>
+                                                    <p class="show-buttons">
+                                                            <input id="Previous" type="button" class="show-back alignLeft" value="Previous" />
+                                                            <input id="Next" type="button" class="show-left alignRight" value="Next" />
+                                                    </p>  
+        
+                                                            <!-- QUESTION 4 -->
+                                                    <div class="left cf panel">
+                                                        <div class="innerQuestion">                                            
+                                                                            <h3>Q4. What is the most popular coffee brand around the world?</h3>                                        
+                                                                            <p id="q4">
+                                                                               <label><input class="uk-radio" name="q4" type="radio" value="McCafe"><i class="fas fa-coffee fa-xs"></i> McCafe </label>
+                                                                                <label><input class="uk-radio" name="q4" type="radio" value="Starbucks"><i class="fas fa-coffee fa-xs"></i> Starbucks</label>
+                                                                                <label><input class="uk-radio" name="q4" type="radio" value="Nescafe"><i class="fas fa-coffee fa-xs"></i> Nescafe </label>
+                                                                                <label><input class="uk-radio" name="q4" type="radio" value="Nespreso"><i class="fas fa-coffee fa-xs"></i> Nespreso </label>
+                                                                                <label><input class="uk-radio" name="q4" type="radio" value="Tim Horton"><i class="fas fa-coffee fa-xs"></i>  Tim Horton </label>                                    
+                                                                                <br>
+                                                                            </p>
+                                                        </div>
+                                                    </div>  
+                                                    
+                                                    <p class="show-buttons">
+                                                            <input id="Previous" type="button" class="show-right alignLeft" value="Previous" />
+                                                            <input id="Next" type="button" class="show-top alignRight" value="Next" />
+                                                    </p>  
+        
+        
+                                                             <!-- QUESTION 5 -->
+        
+                                                    <div class="top cf panel">                                                         
+                                                                <div class="innerQuestion">
+                                                                    <h3>Q5.What is the most popular coffee brand in Canada?</h3>                                        
+                                                                    <p id="q5">
+                                                                        <label><input class="uk-radio" name="q5" type="radio" value="McCafe"><i class="fas fa-coffee fa-xs"></i> McCafe </label>
+                                                                        <label><input class="uk-radio" name="q5" type="radio" value="Starbucks"><i class="fas fa-coffee fa-xs"></i> Starbucks</label>
+                                                                        <label><input class="uk-radio" name="q5" type="radio" value="Nescafe"><i class="fas fa-coffee fa-xs"></i> Nescafe </label>
+                                                                        <label><input class="uk-radio" name="q5" type="radio" value="Nespreso"><i class="fas fa-coffee fa-xs"></i> Nespreso </label>
+                                                                        <label><input class="uk-radio" name="q5" type="radio" value="Tim Horton"><i class="fas fa-coffee fa-xs"></i>  Tim Horton </label>                                    
+                                                                        <br>
+                                                                    </p>
+                                                                </div>
+                                                    </div>
 
-                                        
-                                        <h3>Q7.How many cups of coffee does the average person drink on a daily basis?</h3>                                        
-                                        <form id="q7">
-                                            <input class="uk-radio" name="q7" type="radio" value="2"><i class="fas fa-coffee fa-xs"></i> 2 </input>
-                                            <input class="uk-radio" name="q7" type="radio" value="3"><i class="fas fa-coffee fa-xs"></i> 3 </input>
-                                            <input class="uk-radio" name="q7" type="radio" value="5"><i class="fas fa-coffee fa-xs"></i> 5 </input>
-                                            <input class="uk-radio" name="q7" type="radio" value="1"><i class="fas fa-coffee fa-xs"></i> 1  </input>
-                                            <br>
-                                            <button class="uk-button uk-button-primary"> Submit </button>
-                                        </form>
+                                                    <p class="show-buttons">
+                                                            <input id="Previous" type="button" class="show-left alignLeft" value="Previous" />
+                                                            <input id="Next" type="button" class="show-buttons alignRight" value="Next" />
+                                                    </p>  
+        
+        
+                                 
+                                                    <!-- QUESTION 6 -->
+                                                     <div class="botton cf panel">
+                                                         <div class="innerQuestion">
+                                                                    <h3>Q6.What is the most popular coffee beverage?</h3>                                        
+                                                                        <p id="q6">
+                                                                                <label><input class="uk-radio" name="q6" type="radio" value="Espresso"><i class="fas fa-coffee fa-xs"></i> Espresso </label>
+                                                                                <label><input class="uk-radio" name="q6" type="radio" value="Capuccino"><i class="fas fa-coffee fa-xs"></i> Capuccino </label>
+                                                                                <label><input class="uk-radio" name="q6" type="radio" value="Black Coffee"><i class="fas fa-coffee fa-xs"></i> Black Coffee </label>
+                                                                                <label><input class="uk-radio" name="q6" type="radio" value="Latte"><i class="fas fa-coffee fa-xs"></i> Latte  </label>
+                                                                                <label><input class="uk-radio" name="q6" type="radio" value="Mocha"><i class="fas fa-coffee fa-xs"></i>  Mocha </label>                                    
+                                                                                <br>
+                                                                        </p>
+                                                         </div>      
+                                                    </div>
 
-                                        <h3>Q8. What are the most common ways people take their coffee? </h3>                                        
-                                        <form id="q8">
-                                            <input class="uk-radio" name="q8" type="radio" value="Sugar"><i class="fas fa-coffee fa-xs"></i> Sugar </input>
-                                            <input class="uk-radio" name="q8" type="radio" value="Cinnamon"><i class="fas fa-coffee fa-xs"></i> Cinnamon</input>
-                                            <input class="uk-radio" name="q8" type="radio" value="Milk"><i class="fas fa-coffee fa-xs"></i> Milk</input>
-                                            <input class="uk-radio" name="q8" type="radio" value="Cream"><i class="fas fa-coffee fa-xs"></i> Cream  </input>
-                                            <br>
-                                            <button class="uk-button uk-button-primary"> <h1> Submit </h1></button>
-                                        </form>
-                                    </div>            
+                                                    
+                                                    <p class="show-buttons">
+                                                            <input id="Previous" type="button" class="show-top alignLeft" value="Previous" />
+                                                            <input id="Next" type="button" class="show-front alignRight" value="Next" />
+                                                    </p>  
+         
+           
+                                                    <!-- QUESTION 7         -->
+                                                    <div class="front cf panel">
+                                                        <div class="innerQuestion">
+                                                                            <h3>Q7.How many cups of coffee does the average person drink on a daily basis?</h3>                                        
+                                                                            <p id="q7">
+                                                                                <input class="uk-radio" name="q7" type="radio" value="2"><i class="fas fa-coffee fa-xs"></i> 2 </label>
+                                                                                <input class="uk-radio" name="q7" type="radio" value="3"><i class="fas fa-coffee fa-xs"></i> 3 </label>
+                                                                                <input class="uk-radio" name="q7" type="radio" value="5"><i class="fas fa-coffee fa-xs"></i> 5 </label>
+                                                                                <input class="uk-radio" name="q7" type="radio" value="1"><i class="fas fa-coffee fa-xs"></i> 1  </label>
+                                                                                <br>
+                                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="show-buttons">
+                                                            <input id="Previous" type="button" class="show-botton alignLeft" value="Previous" />
+                                                            <input id="Next" type="button" class="show-back alignRight" value="Next" />
+                                                    </p>  
+        
+                                                             <!-- QUESTION 8         -->
+                                                    <div class="back cf panel">
+                                                                    <div class="innerQuestion">
+                                                                            <h3>Q8. What are the most common ways people take their coffee? </h3>                                        
+                                                                            <p id="q8">
+                                                                                <input class="uk-radio" name="q8" type="radio" value="Sugar"><i class="fas fa-coffee fa-xs"></i> Sugar </label>
+                                                                                <input class="uk-radio" name="q8" type="radio" value="Cinnamon"><i class="fas fa-coffee fa-xs"></i> Cinnamon</label>
+                                                                                <input class="uk-radio" name="q8" type="radio" value="Milk"><i class="fas fa-coffee fa-xs"></i> Milk</label>
+                                                                                <input class="uk-radio" name="q8" type="radio" value="Cream"><i class="fas fa-coffee fa-xs"></i> Cream  </label>
+                                                                                <br>
+                                                                            </p>  
+                                                                    </div>                  
+                                                    </div>
+
+                                                    <p class="show-buttons">
+                                                            <input id="Previous" type="button" class="show-front alignLeft" value="Previous" />
+                                                            <input id="Submit" type="submit" class="show-back alignRight" value="Submit" />
+                                                    </p>
+    
+                                            </form>                                                
+
+                                        </fieldset>  
+                                    </div>
                             </div>
-                    </div>               
-                </div>
-            </div>
-        </div>
-
+                    </article>               
+                              
             
     </Main>
 
@@ -157,5 +236,8 @@
             </div>
     </footer>
     <script type="text/javascript" src="assets/javascript/app.js"></script> 
+    <script type="text/javascript" src="assets/javascript/utils.js"></script> 
+    <script type="text/javascript" src="assets/javascript/custom_survey.js"></script> 
+
 </body>
 </html>

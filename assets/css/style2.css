@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  header{
+      text-align: center;
+      border: 3px solid darkblue;
+      background-image: url("../images/coffee5.jpg");
+    }
+
+  .jumbotron{
+    text-align: center;
+    border: 3px;
+    color: aliceblue;
+    margin-top: 20px;
+    background-image: url("../images/game.jpg");
+
+}
+
+.title{
+    /* color: aliceblue; */
+    font-family: 'Merienda', cursive;
+}
+
+
+  body{
+     background-image: url("../images/coffee.jpg");     
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h3{
+    /* color: #254117; */
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    /* color: aliceblue; */
+    }
+
+    p{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 24px;
+     }
+
+  .timer{
+      font-size: 60px;
+      border: dashed darksalmon 5px;
+      font-family: 'Merienda', cursive;
+      text-align: center;
+      display: block;
+      margin: 10px 0 20px 0;
+
+  }
+
+
+article {
+        clear: both;
+        margin-bottom: 3px;
+    }
+
+    
+aside {
+        float: right;
+        width: 318px;
+    }
+    footer {
+        clear: both;
+        text-align: center;
+        background-image: url("../images/coffee5.jpg");
+        border: 3px solid darkblue;
+    }
+
+    #transitions{
+        margin: 0 auto;
+        border: 5px solid brown dashed;
+        text-align: center;
+        padding: 10px;
+    }
