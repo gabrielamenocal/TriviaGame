@@ -37,7 +37,7 @@ html {
     margin-right:auto;
 }
 
-h3{
+h3 #score{
     /* color: #254117; */
     font-family: 'Cormorant Garamond', serif;
     font-weight: bold;

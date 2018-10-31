@@ -1,9 +1,3 @@
-// q1. How much does the most expensive coffee cost?
-// A. Kopi luwak or civet coffee, and cost USD 500.00 per kg
-
-// q.2 Which country drinks most coffee? a. Finland
-
-// q3. Which if these is countries is a coffee productor? a. Honduras
 var rights = [];
 var wrongs = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"];
 var answers = ["","Finland","500","Honduras","Starbucks","Tim Horton","Black Coffee","2","Milk"];
@@ -11,6 +5,7 @@ var x, seconds;
 
 
 $(document).ready(function() {
+    $("#score").hide();
     timer();
        
     function review (q){
@@ -83,14 +78,23 @@ $(document).ready(function() {
         e.preventDefault();
         document.getElementById("time").innerHTML = "You submitted!";
         clearInterval(x);
+        // debugger
 
         if (rights.length > wrongs.length) {
-
+                console.log(rights.length);
                 $("#questions").html('<h1 style="color: orange;"> You are a WINNER <h1>');
+                $("#score").show();
+                $("#FinalScore").html(rights.length);
+
 
 
         } else {
+                console.log(rights.length);
                 $("#questions").html('<h1 style="color:red;"> You are a LOSER <h1>');
+                $("#score").show();
+                $("#FinalScore").html(rights.length);
+
+
 
         }
     });  
